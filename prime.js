@@ -16,3 +16,7 @@ checkprime = (number) => {
   } else {
     console.log(n, "is not a prime number")
   }
+
+
+ 
+
