@@ -1,15 +1,21 @@
 function prime(num){
-    for(let i=i; i<=num; i++){
+let count = 0;
+    for(let i=1; i<=num; i++){
         if(num%i==0){
-            return "Prime";
-        }else{
-            return "NA";
+            count++;
         }
-    }
-}
-let ans = check(19);
-if(ans==true){
-    console.log("prime");
+   }         
+   if(count==2){
+return true;
 }else{
-    console.log("NA");
+return false;
+   }
+}     
+let ans=prime(19);
+if(ans==true){
+  console.log("Prime Number");
+}else{
+console.log("Not Prime");
 }
+
+ 
