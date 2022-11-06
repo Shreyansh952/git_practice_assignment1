@@ -1,15 +1,18 @@
-function prime(num){
-    for(let i=i; i<=num; i++){
-        if(num%i==0){
-            return "Prime";
-        }else{
-            return "NA";
-        }
+let n = 19;
+checkprime = (number) => {
+    if (number == 1) {
+      return false;
     }
-}
-let ans = check(19);
-if(ans==true){
-    console.log("prime");
-}else{
-    console.log("NA");
-}
+    for (let i = 2; i <= number ** 0.5; i++) {
+      if (number % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  let answer = checkprime(n);
+  if (answer == true) {
+    console.log(n, "is a prime number")
+  } else {
+    console.log(n, "is not a prime number")
+  }
