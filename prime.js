@@ -7,4 +7,9 @@ function prime(num){
         }
     }
 }
-check(19);
+let ans = check(19);
+if(ans==true){
+    console.log("prime");
+}else{
+    console.log("NA");
+}
